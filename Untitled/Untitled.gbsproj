@@ -450,12 +450,21 @@
                     "id": "3dfd1cc3-dbfb-4eb0-ae58-234a7f9026d6"
                 },
                 {
+                    "command": "EVENT_WAIT",
+                    "args": {
+                        "time": 5,
+                        "frames": 30
+                    },
+                    "id": "6d83b132-46e0-4c1a-8359-28da81181294"
+                },
+                {
                     "command": "EVENT_TEXT",
                     "args": {
                         "text": [
                             "We are a community\nhackerspace and \nmakerspace \nfor makers, \ncoders,\ncrafters, \nand much more!\nCome on in! <~~~"
                         ],
-                        "avatarId": ""
+                        "avatarId": "",
+                        "__comment": true
                     },
                     "id": "622705d2-0ff4-4666-af31-daa1a398fb22"
                 },
@@ -466,7 +475,8 @@
                         "x": 0,
                         "y": 0,
                         "direction": "",
-                        "fadeSpeed": "2"
+                        "fadeSpeed": "2",
+                        "__collapse": true
                     },
                     "id": "55315150-fede-4250-b06d-1d18683f780f"
                 }
@@ -474,7 +484,8 @@
             "playerHit1Script": [],
             "playerHit2Script": [],
             "playerHit3Script": [],
-            "playerSpriteSheetId": "581d34d0-9591-4e6e-a609-1d94f203b0cd"
+            "playerSpriteSheetId": "581d34d0-9591-4e6e-a609-1d94f203b0cd",
+            "autoFadeEventCollapse": true
         },
         {
             "name": "Scene 3",
@@ -485,7 +496,7 @@
             "paletteIds": [],
             "spritePaletteIds": [],
             "collisions": [],
-            "autoFadeSpeed": 1,
+            "autoFadeSpeed": 2,
             "id": "a3af8140-64c2-441e-b067-8fe61d57e89b",
             "symbol": "scene_0",
             "x": 639.4641148325359,
@@ -496,7 +507,7 @@
                 {
                     "command": "EVENT_SET_TIMER_SCRIPT",
                     "args": {
-                        "duration": 2,
+                        "duration": 10,
                         "frames": 30,
                         "__scriptTabs": "end"
                     },
@@ -560,7 +571,7 @@
                 {
                     "command": "EVENT_WAIT",
                     "args": {
-                        "time": 2,
+                        "time": 10,
                         "frames": 30
                     },
                     "id": "f859ee2c-80b0-423c-b472-da522c8783f4"
@@ -608,7 +619,7 @@
                 {
                     "command": "EVENT_WAIT",
                     "args": {
-                        "time": 2,
+                        "time": 10,
                         "frames": 30
                     },
                     "id": "4aa42fcd-e774-42de-9f08-bd9f60d6ee84"
@@ -651,7 +662,7 @@
                 {
                     "command": "EVENT_WAIT",
                     "args": {
-                        "time": 2,
+                        "time": 10,
                         "frames": 30
                     },
                     "id": "7c6cb1f3-a1ef-4b91-801e-f655a9f3c671"
@@ -694,7 +705,7 @@
                 {
                     "command": "EVENT_WAIT",
                     "args": {
-                        "time": 2,
+                        "time": 10,
                         "frames": 30
                     },
                     "id": "fa1b1328-b702-48e2-a6c9-f0331846c47a"
@@ -737,7 +748,7 @@
                 {
                     "command": "EVENT_WAIT",
                     "args": {
-                        "time": 2,
+                        "time": 10,
                         "frames": 30
                     },
                     "id": "c764bdad-9d15-441e-b485-89b8e1bee0f6"
@@ -776,7 +787,27 @@
             "y": 719.8468899521537,
             "actors": [],
             "triggers": [],
-            "script": [],
+            "script": [
+                {
+                    "command": "EVENT_WAIT",
+                    "args": {
+                        "time": 10,
+                        "frames": 30
+                    },
+                    "id": "096ee909-e903-4f3f-a6e2-9e13f903ea64"
+                },
+                {
+                    "command": "EVENT_SWITCH_SCENE",
+                    "args": {
+                        "sceneId": "67226739-9d47-434d-ae33-69fcc27e7f62",
+                        "x": 0,
+                        "y": 0,
+                        "direction": "",
+                        "fadeSpeed": "2"
+                    },
+                    "id": "cb6afee9-fe70-4cb7-a883-5a8f375e3b98"
+                }
+            ],
             "playerHit1Script": [],
             "playerHit2Script": [],
             "playerHit3Script": []
@@ -791,7 +822,8 @@
             "height": 18,
             "imageWidth": 160,
             "imageHeight": 144,
-            "filename": "RA_Elect.png"
+            "filename": "RA_Elect.png",
+            "tileColors": []
         },
         {
             "id": "cdbb3bad-eb1c-4a41-9d96-c543e82f4fae",
@@ -801,7 +833,8 @@
             "height": 18,
             "imageWidth": 160,
             "imageHeight": 144,
-            "filename": "RA_Serv_1.png"
+            "filename": "RA_Serv_1.png",
+            "tileColors": []
         },
         {
             "id": "16cba1ad-5d6f-4492-a77e-a8a41e16df91",
@@ -811,7 +844,8 @@
             "height": 18,
             "imageWidth": 160,
             "imageHeight": 144,
-            "filename": "RA_Serv_2.png"
+            "filename": "RA_Serv_2.png",
+            "tileColors": []
         },
         {
             "id": "3dda98e4-4d00-4e3b-a27c-f1eae8160449",
@@ -821,7 +855,8 @@
             "height": 18,
             "imageWidth": 160,
             "imageHeight": 144,
-            "filename": "RA_Serv_3.png"
+            "filename": "RA_Serv_3.png",
+            "tileColors": []
         },
         {
             "id": "b71a2b73-3485-4add-a1cd-b5841f80be63",
@@ -831,7 +866,18 @@
             "height": 18,
             "imageWidth": 160,
             "imageHeight": 144,
-            "filename": "RA_Serv_4.png"
+            "filename": "RA_Serv_4.png",
+            "tileColors": []
+        },
+        {
+            "id": "cc2d1ae1-870a-41ad-84ca-06d21440d377",
+            "name": "RA_Serv_5",
+            "symbol": "bg_ra_serv_5",
+            "width": 20,
+            "height": 18,
+            "imageWidth": 160,
+            "imageHeight": 144,
+            "filename": "RA_Serv_5.png"
         },
         {
             "id": "d1e4f872-3ba4-4fa9-b68b-c7892c10d318",
@@ -841,7 +887,8 @@
             "height": 18,
             "imageWidth": 160,
             "imageHeight": 144,
-            "filename": "RA_Vapor.png"
+            "filename": "RA_Vapor.png",
+            "tileColors": []
         },
         {
             "id": "b2d40305-ec91-4f3f-a37e-73861c09f58e",
@@ -862,7 +909,8 @@
             "height": 18,
             "imageWidth": 160,
             "imageHeight": 144,
-            "filename": "WTM_RA.png"
+            "filename": "WTM_RA.png",
+            "tileColors": []
         },
         {
             "id": "8003d42f-ee78-494f-b51e-3b712a883109",
@@ -2200,7 +2248,7 @@
         "startDirection": "down",
         "showCollisions": true,
         "showConnections": true,
-        "worldScrollX": 101,
+        "worldScrollX": 117,
         "worldScrollY": 40,
         "zoom": 104.5,
         "customColorsEnabled": true,
@@ -2230,9 +2278,9 @@
         "defaultUIPaletteId": "default-ui",
         "playerPaletteId": "",
         "navigatorSplitSizes": [
-            587,
-            179,
-            179
+            656,
+            199,
+            199
         ],
         "showNavigator": true,
         "defaultFontId": "4bd653f0-e08d-424e-9e5b-c1f3aaa21e47",
