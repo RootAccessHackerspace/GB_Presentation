@@ -1,1 +1,1 @@
-
+![RA presentation](RA_presentation.gif)
